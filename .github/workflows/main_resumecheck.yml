@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - Resumecheck
+name: Build and deploy Python app to Azure Web App - apple
 
 on:
   push:
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_7999F9B8C48C494CAE98ED2DF759EBA1 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_5F5221D0A75B483490E03182C32A53E7 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_FC4C5484A2C04334B451401F751920D2 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0081483EF5DE47B9847E70EC3E5E06CC }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9ED771AED7D74CE88078D0BE1718A292 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_C0B755A2D68047A987322579C5416338 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'Resumecheck'
+          app-name: 'apple'
           slot-name: 'Production'
           
