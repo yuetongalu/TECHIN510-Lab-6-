@@ -11,4 +11,5 @@ Hi I have two account and I wrongly upload in this account:
 1. Change the `.env` file to your API
 1. `streamlit run app.py`
 
-test function
+## Inclusion:
+app.py: The main application made with streamlit.
